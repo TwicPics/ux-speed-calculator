@@ -25,14 +25,15 @@ const params = {
     step: 1,
     serialize: true
   },
-  mu: {
-    description: "'Location' of lognormal speed distribution",
-    label: "Base Speed (μ)",
-    initial: 1.5,
-    min: -3,
-    max: 3,
+  baseSpeed: {
+    description: "Exponential of 'Location' of lognormal speed distribution",
+    label: "Base Speed",
+    initial: 4.5,
+    min: 0.05,
+    max: 20,
     step: 0.01,
-    serialize: true
+    serialize: true,
+    units: "seconds"
   },
   sigma: {
     description: "'Scale' of lognormal speed distribution",

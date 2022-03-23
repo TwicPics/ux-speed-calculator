@@ -16,7 +16,7 @@ const distribution = params => {
 
   // lognormal distribution
   const dist = lognormal(x, {
-    mu: params.mu.value,
+    mu: Math.log( params.baseSpeed.value ),
     sigma: params.sigma.value
   });
 

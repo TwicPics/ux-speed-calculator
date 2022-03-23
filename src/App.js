@@ -13,7 +13,7 @@ import distribution from "./distribution";
 const panels = [
   {
     label: "Speed Distribution",
-    params: ["mu", "sigma"]
+    params: ["baseSpeed", "sigma"]
   },
   {
     label: "Error Rate",
